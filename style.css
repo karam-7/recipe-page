@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&family=Raleway:ital,wght@1,100&family=Roboto+Condensed:ital@1&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+
+body {
+  padding: 52px 237px 0 234px;
+  max-width: 1440px;
+  font-family: "Montserrat";
+}
+
+.cake {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  padding-right: 20px;
+}
+
+h1 {
+  width: 587px;
+  height: 64px;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+.about img {
+  margin-bottom: 20px;
+}
+
+.para1 {
+  width: 592px;
+  height: 51px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 20px;
+}
+
+.info {
+  margin-top: 55px;
+  padding-right: 20px;
+  width: 216px;
+  float: right;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.dish {
+  margin-top: 55px;
+}
+
+.clock,
+.menu {
+  display: flex;
+  padding: 30px 0px 0px 46px;
+}
+
+.menu span {
+  margin-top: 20px;
+  color: #f2994a;
+  font-weight: bolder;
+}
+
+.time h5 {
+  color: #f2994a;
+  margin-top: -5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.clock span {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.time,
+.time1 {
+  padding: 1px;
+  margin: 5px;
+}
+.clock p,
+.menu p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.clock h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: -5px;
+}
+
+.dish h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.dish h4 {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+li {
+  list-style: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  width: 528px;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 5px;
+}
+
+ul > li::before {
+  content: "";
+  border: 1px solid #828282;
+  border-radius: 4px;
+  position: absolute;
+  left: 250px;
+  color: #333333;
+  height: 1.2em;
+  width: 1.2em;
+  cursor: pointer;
+}
+
+ol > li {
+  counter-increment: line-li;
+}
+
+ol > li::before {
+  font-family: "Playfair Display";
+  font-size: 24px;
+  line-height: 32px;
+  content: counter(line-li);
+  position: absolute;
+  left: 220px;
+  background-color: #f2994a;
+  border-radius: 6px;
+  text-align: center;
+  padding: 5px 10px;
+  padding-bottom: 15px;
+  color: white;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+.link{
+  margin-top: 50px;
+}
+
+.source {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #BDBDBD;
+  text-decoration: none;
+}
+
+.foot p{
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  color: #BDBDBD;
+}
+
+.foot a{
+  color: #BDBDBD;
+}
+
+.img{
+  width: fit-content;
+}
+
+@media screen and (max-width: 1200px){
+  body{
+    padding: 52px 100px 0 50px;
+  }
+  .info{
+    float: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  ul> li::before{
+    left: 70px;
+  }
+
+  ol > li::before{
+    left: 50px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    padding-left: 0;
+  }
+  .container{
+    width: fit-content;
+  }
+
+  ol> li{
+    margin-left: 20px;
+  }
+
+  ul> li::before, ol> li::before{
+    left: 10px;
+  }
+  
+  
+}
